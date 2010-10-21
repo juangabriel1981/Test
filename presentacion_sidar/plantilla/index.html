@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+  <title>Jornadas Sidar 2010: VAPOR</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="copyright" content="Copyright © 2010-2011 Fundación Sidar" />
+  <meta name="keywords"
+  content="Accesibilidad, SIDAR, SID@R, Web, Internet, W3C, Discapacidad, " />
+  <meta name="Description"
+  content="VAPOR: Ponencia en las Jornadas Sidar 2010 (Congreso Internacional de Accesibilidad Web La Rioja. SIDAR 2010)"
+  />
+  <meta name="copyright" content="Copyright © 2010 Fundación Sidar" />
+  <meta name="font-size-adjustment" content="-1" />
+  <link rel="stylesheet" href="../sidar-nar.css" type="text/css"
+  media="screen, projection, print" />
+  <script type="text/javascript" src="../slidy.js">
+  </script>
+</head>
+
+<body>
+<!-- this defines the slide background -->
+
+<div class="background">
+
+<div class="footer">
+<!-- Cambiar el nombre de la presentacion y del evento, etc. -->
+<span>Jornadas SIDAR 2010:VAPOR.</span> </div>
+</div>
+
+<div class="background slanty">
+<!--
+<img src="logosidar-difuso.gif" alt="Logo del SIDAR (difuso)" />
+-->
+<img src="../img/logo-solo-volumen-reflejo-mini.png" alt="Logo del SIDAR"
+width="100" height="116" /> </div>
+
+<div class="slide cover titlepage">
+<img src="../img/logo-solo-volumen-reflejo.png" alt="Logotipo del SIDAR"
+width="240" height="347" /> <!-- Indicar el nombre de la presentacion --> 
+
+<h1>Jornadas SIDAR 2010</h1>
+
+<h2>VAPOR: Verificación de la accesibilidad web entre pares y revisores</h2>
+
+<p>Juan Gabriel Sáenz, <a href="mailto:juangabriel@sidar.org">juangabriel@sidar.org</a><br />
+<br />
+<em>Pulsar la barra espaciadora para ir a la siguiente transparencia</em></p>
+</div>
+
+<div class="slide">
+<h1>Objetivos</h1>
+<h2>Objetivo general:</h2>
+<p>Ofrecer una herramienta basada en la web que permita a usuarios comunes y a expertos en diseño, desarrollo web y accesibilidad comunicarse con los webmasters de aquellos sitios que los usuarios han encontrado poco accesibles, sea cual sea su apreciación de la accesibilidad, al mismo tiempo que brinda una comunidad de apoyo para los webmasters, que, aprovechando las características de red social de Vapor, podrán encontrar apoyo para realizar las revisiones necesarias a su sitio web y corregir las barreras de accesibilidad encontradas. </p>
+<h2>También buscamos:</h2>
+<ul>
+  <li>Formación: Favorecer la correcta transferencia de conocimiento entre diferentes tipos de usuarios (medios o expertos) acerca de la accesibilidad web y la importancia de contar con una web accesible e inclusiva. </li>
+  <li>Comunidad web: Conformar una comunidad de usuarios involucrados en el desarrollo y mantenimiento de sitios web para favorecer entre éstos el intercambio de información, la ayuda basada en el trabajo colaborativo, lo cual deberá verse reflejado en un aumento de la calidad de los sitios web que tienen a su cargo y son reportados a Vapor. </li>
+  <li>Repositiorio semántico de buenas prácticas en accesibilidad web: Conformar un repositorio semántico de buenas prácticas en accesibilidad web a través de las listas de sitios analizados, comentarios y etiquetas en los espacios de discusión y metadatos del sistema que faciliten su indexación y utilización por parte de personas o sistemas interesados. </li>
+  </ul>
+
+</div>
+
+<div class="slide">
+<h1 id="motiva">Arquitectura de desarrollo: Vapor </h1>
+
+<p>Vapor es un desarrollo propio de la Fundación Sidar liberado como software libre con licencia GPL.</p>
+<p>Vapor es una aplicación web multiplataforma desarrollada en PHP y MySQL.</p>
+<p>&nbsp;</p>
+<p><img src="pics/vapor-php-mysql.jpg" alt="Vapor está desarrollado con PHP y MySQL" width="609" height="205" /></p>
+</div>
+<div class="slide">
+<h1 id="motiva">Arquitectura de desarrollo: Servicios </h1>
+
+<p>Vapor es un desarrollo que se instala sobre el CMS Drupal para aprovechar los servicios básicos que éste ofrece.</p>
+<ul>
+<li>Autorización (gestión de permisos o roles de usuario)</li>
+<li>Autenticación (control de acceso)</li>
+<li>Locale 18 (multi-idioma)</li>
+<li>Logging (o tracing, registro de actividad del sistema)</li>
+<li>Configuración</li>
+</ul>
+</div>
+<div class="slide">
+<h1 id="motiva">Arquitectura de desarrollo: Frameworks </h1>
+
+<p>Vapor se integra con Drupal (o cualquier otro sistema) y con HERA 2, el cual es el motor de análisis de accesibilidad de páginas web que utiliza Vapor para generar los informes para los webmásters.</p>
+<p><img src="pics/arquitectura_vapor.jpg" alt="Vapor se integra con Drupal y con Hera2" width="640" height="480" /></p>
+</div>
+<div class="slide">
+<h1 id="motiva">Arquitectura de desarrollo: Snippets </h1>
+
+<p>Vapor aprovecha el framework de Drupal para generar los servicios básicos de idioma, roles, autenticación, logs y configuración.</p>
+<p>La integración de las dos herramientas se hace a través del estándar de snippets para Drupal.</p>
+<p><img src="pics/vapor-drupal.jpg" alt="Vapor se integra a Drupal a través de Snippets" width="640" height="480" /></p>
+</div>
+<div class="slide">
+<h1 id="motiva">Arquitectura de desarrollo: Web services </h1>
+
+<p>Vapor aprovecha el enorme potencial de Hera 2 para realizar evaluaciones automáticas de accesibilidad web para la generación de los informes que son enviados a los webmásters.</p>
+<p>La integración de las dos herramientas se hace a través de web services.</p>
+<p><img src="pics/vapor-hera2.jpg" alt="Vapor se integra a Hera a través de web services" width="640" height="480" /></p>
+</div>
+<div class="slide">
+<h1 id="motiva">Arquitectura de desarrollo: Integraciones </h1>
+
+<p>Vapor puede integrarse con otras aplicaciones como pueden ser: CMS, desarrollos propios, redes sociales (facebook, twitter, etc) para ofrecer otras funcionalidades en contextos diversos. Estas integraciones dependen de la tecnología de la nueva aplicación, y se soportan protocolos SOAP, REST, AMF, XML-RPC o integraciones a través de API-KEY (Facebook, Twitter, etc.).</p>
+<p><img src="pics/vapor-x.jpg" alt="Vapor puede integrarse a cualquier sistema" width="640" height="480" /></p>
+</div>
+<div class="slide">
+<h1 id="motiva">Vamos a ver un demo :</h1>
+<p>&nbsp; </p>
+<ul>
+<li><strong>PLAN A:</strong> Ver un demo en <a href="http://vapor.sidar.org" target="_blank" title="Esta ventana se abre en una nueva ventana">http://vapor.sidar.org</a><br />
+  <br />
+</li>
+<li><strong>PLAN B:</strong> Si la ley de Murphy hace que el demo no funcione entonces veremos un <a href="../../vapor_for_all.ogv">video de demostracion</a>. </li>
+</ul>
+</div>
+<div class="slide">
+<h1 id="motiva">Por hacer: </h1>
+<ul>
+<li>Generación de informes en formato RDF y envío como adjunto en el mensaje enviado al webmáster.</li>
+<li>Creación de la lista de websites &quot;en estado de evaluación&quot; y sistema de rating en accesibilidad.</li>
+<li>Sistema de verificación de un website atribuido a un webmáster.</li>
+<li>Completa integración con Hera 2.</li>
+<li>Diseño de la interfaz web.</li>
+
+  <li>Traducciones. </li>
+</ul>
+</div>
+<div class="slide">
+<h1 id="motiva">Un llamado a los voluntarios: </h1>
+
+<p>Este es un proyecto de software libre y tú también puedes ayudarnos a mejorar Vapor. A continuación enumeramos las actividades en las que puedes prestarnos tu valiosa ayuda como voluntario:</p>
+<ul>
+  <li>Tests de uso.</li>
+  <li>Reporte de bugs. </li>
+  <li>Traducciones. (Aplicación y documentación) </li>
+  <li>Difusión.</li>
+  <li>Diseño de la interfaz web.   </li>
+</ul>
+</div>
+<div class="slide">
+<h1 id="motiva">Vapor es para todas y todos: </h1>
+
+<p>&nbsp;</p>
+<p>Te invitamos a usar Vapor, con tu ayuda podremos tener una web más accesible e incluyente.</p>
+<p>&nbsp;</p>
+<p>Puedes crear una cuenta, o si lo prefieres puedes iniciar sesión con tu cuenta de OpenID. </p>
+<p>&nbsp;</p>
+</div>
+<div class="slide">
+<h1 id="motiva">Agradecimientos: </h1>
+
+<p class="destaca">&nbsp;</p>
+<p class="destaca">! Le agradecemos a Ustedes, el público que hace posible las jornadas ! </p>
+<p class="destaca">&nbsp;</p>
+<p class="destaca">Y por supuesto, !agradecemos a la Organización de las Jornadas Sidar 2010 de la Rioja! </p>
+<h2 class="destaca">¿ PREGUNTAS ? </h2>
+</div>
+</body>
+</html>
